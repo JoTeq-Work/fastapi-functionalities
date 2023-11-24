@@ -1,0 +1,19 @@
+{% extends 'layout.html' %}
+{% block content %}
+    <div class="container">
+        <div class="card text-center mt-3">
+            <div class="card-header">
+                Test button toggle
+            </div>
+            <div id="aiListening" class="card-body">
+                {{ text }}
+            </div>
+        </div>
+        <form action="/" method="POST">
+            <div>
+                <!--<textarea class="form-control" placeholder="Add input here" name="input" rows="3"></textarea>-->
+                <button id="chatBtn" class="btn btn-success mt-1" type="submit">Click button</button>
+            </div>
+        </form>    
+    </div>
+{% endblock %}
